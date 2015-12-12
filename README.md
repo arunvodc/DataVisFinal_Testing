@@ -11,18 +11,18 @@ Arun Vadivel
 [Layout1](http://arunvodc.github.io/DataVisFinal/layout1.html)<br>
 [Layout2](http://arunvodc.github.io/DataVisFinal/layout2.html)
 
-Overview:<br>&nbsp;
+#Overview:<br>&nbsp;
 This is a visualization for Crime Rates in USA from 1966-2012.  The visualization has two layouts.  The first layout shows the user about the trends of different states in USA for each category of crimes with an interactive map and the ranks of the states for each of those category from the years 1966-2012.<br /> The second layout is for comparing different states based on the total violent crime on a multiple line chart for the years 1965-2012. There is a navigation link between the two layout and an introduction page for the convenience of the user to shift between visualizations.
 
-Introduction Page:<br>&nbsp;
+#Introduction Page:<br>&nbsp;
 The introduction page contains a short description about what this visualization is about and with links to screencast, process book and the visualization. This page is developed using HTML and CSS, and it has few images and the some content to introduce the user to the story of the visualization. This is the page from where the visualization starts from.<br><br>
 	![Intro](img/Introduction.jpg)
 	Introduction.html contains the main code for this page with a supporting introStyle.css within the ‘css’ folder. The images for this page is in ‘img’ folder. The three links from this page is basically based on an image click with hyperlink function. The first link navigates to the screen-cast link, which is a YouTube link. The user will have a two minutes walkthrough on the visualizations. The second link navigates to the process book, which is a PDF file. The file ‘process_book.pdf’ is contained in the ‘process_book’ folder. The third link takes the user to the visualization, starting with layout 1.
 
-Data:
+#Data:
 The data is present in ‘crime.csv’ file and it contains all the required data for the visualization.
 
-Layout 1:
+#Layout 1:
 	This visualization has an interactive map with to visualize the trends of different states from 1966-2012 with the help of a year slider and a rank table for different categories of crime.
 	Layout1.html – HTML file for the visualization of Layout 1 with a call to main_crime.js and the link to D3.js library.
 	In ‘js’ folder:
@@ -37,7 +37,7 @@ Layout 1:
 
 The user can view the crime trends of all the states from 1966-2012 using the interactive map and the slider for changing the years. This can be changed for different categories. Also there is a rank table for the user to display the rank of each state (based on a click on the map) for different categories, which changes dynamically.
 
-Layout 2:
+#Layout 2:
 	Layout 2 is the visualization to compare different states in USA on basis of Violent Crime Rates for the years 1966-2012 using multiple line chart.
 	Layout2.html – HTML file for the visualization to compare violent crime rates for different states from 1966-2012. Calls jQuery for ‘jquery-hover-dropdown-box’ for interactive checkbox.
 	In ‘js’ folder:
