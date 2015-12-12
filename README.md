@@ -7,11 +7,8 @@ Harsh Vardhan<br>
 Arun Vadivel
 
 Links:
-<Visualization>
-<Screencast>
-
-[Introduction](http://arunvodc.github.io/DataVisFinal/introduction.html)
-[Layout1](http://arunvodc.github.io/DataVisFinal/layout1.html)
+[Introduction](http://arunvodc.github.io/DataVisFinal/introduction.html)<br>
+[Layout1](http://arunvodc.github.io/DataVisFinal/layout1.html)<br>
 [Layout2](http://arunvodc.github.io/DataVisFinal/layout2.html)
 
 Overview:<br>&nbsp;
