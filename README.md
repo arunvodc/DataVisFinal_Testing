@@ -15,8 +15,7 @@ Overview:
 
 Introduction Page:
 	The introduction page contains a short description about what this visualization is about and with links to screencast, process book and the visualization. This page is developed using HTML and CSS, and it has few images and the some content to introduce the user to the story of the visualization. This is the page from where the visualization starts from.
-	
-	![Intro](img/introduction.jpg)
+	![Intro](img/Introduction.jpg)
 	
 	Introduction.html contains the main code for this page with a supporting introStyle.css within the ‘css’ folder. The images for this page is in ‘img’ folder. The three links from this page is basically based on an image click with hyperlink function. The first link navigates to the screen-cast link, which is a YouTube link. The user will have a two minutes walkthrough on the visualizations. The second link navigates to the process book, which is a PDF file. The file ‘process_book.pdf’ is contained in the ‘process_book’ folder. The third link takes the user to the visualization, starting with layout 1.
 
