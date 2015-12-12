@@ -20,7 +20,7 @@ The data is present in ‘crime.csv’ file and it contains all the required dat
 
 #Layout 1:
 This visualization has an interactive map with to visualize the trends of different states from 1966-2012 with the help of a year slider and a rank table for different categories of crime.
-<br>Layout1.html – HTML file for the visualization of Layout 1 with a call to main_crime.js and the link to D3.js library.
+<br/>Layout1.html – HTML file for the visualization of Layout 1 with a call to main_crime.js and the link to D3.js library.
 <br><br>In ‘js’ folder:
 <br>main_crime.js – This file has the initial call from where the major interactions of the visualizations take place. It also controls the call to the category rank table and the interactive map.
 <br>slider.js – Contains the code for slider function for the years form 1966-2012. This triggers a function call to change the rank table and the color of the interactive map by calling uStates.js
