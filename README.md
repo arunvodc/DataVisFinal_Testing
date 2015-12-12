@@ -10,7 +10,7 @@ Links:
 <Visualization>
 <Screencast>
 
-[Here](http://cs573-15f.github.io/02-Freestyle/index.html)
+[Here](https://arunvodc.github.io/DataVisFinal_Testing/introduction.html)
 [Youtube](https://www.youtube.com/)
 
 Overview:
