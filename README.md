@@ -1,20 +1,17 @@
-# DataVisFinal
-
-Project Team:
-
+#Project Team:
 Amogh Raghunath<br>
 Harsh Vardhan<br>
 Arun Vadivel
 
-#Links:<br>
+#Links:
 [Introduction](http://arunvodc.github.io/DataVisFinal/introduction.html)<br>
 [Layout1](http://arunvodc.github.io/DataVisFinal/layout1.html)<br>
 [Layout2](http://arunvodc.github.io/DataVisFinal/layout2.html)
 
-#Overview:<br>&nbsp;
+#Overview:
 This is a visualization for Crime Rates in USA from 1966-2012.  The visualization has two layouts.  The first layout shows the user about the trends of different states in USA for each category of crimes with an interactive map and the ranks of the states for each of those category from the years 1966-2012.<br /> The second layout is for comparing different states based on the total violent crime on a multiple line chart for the years 1965-2012. There is a navigation link between the two layout and an introduction page for the convenience of the user to shift between visualizations.
 
-#Introduction Page:<br>&nbsp;
+#Introduction Page:
 The introduction page contains a short description about what this visualization is about and with links to screencast, process book and the visualization. This page is developed using HTML and CSS, and it has few images and the some content to introduce the user to the story of the visualization. This is the page from where the visualization starts from.<br><br>
 	![Intro](img/Introduction.jpg)
 	Introduction.html contains the main code for this page with a supporting introStyle.css within the ‘css’ folder. The images for this page is in ‘img’ folder. The three links from this page is basically based on an image click with hyperlink function. The first link navigates to the screen-cast link, which is a YouTube link. The user will have a two minutes walkthrough on the visualizations. The second link navigates to the process book, which is a PDF file. The file ‘process_book.pdf’ is contained in the ‘process_book’ folder. The third link takes the user to the visualization, starting with layout 1.
