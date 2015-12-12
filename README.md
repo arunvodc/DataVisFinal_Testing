@@ -30,7 +30,7 @@ In ‘css’ folder:
 Layout1.css – Contains the CSS styling functions for the Layout.html file.
 In ‘img’ folder:
 Contains the images for different categories presented in layout1.html
-![Layout 1](img/layout1.jpg)
+![Layout1](img/Layout1.jpg)
 The user can view the crime trends of all the states from 1966-2012 using the interactive map and the slider for changing the years. This can be changed for different categories. Also there is a rank table for the user to display the rank of each state (based on a click on the map) for different categories, which changes dynamically.
 
 #Layout 2:
@@ -44,6 +44,6 @@ Layout 2 is the visualization to compare different states in USA on basis of Vio
 	Layout2.css – CSS styling for layout2.html
 	jquery-hover-dropdown-box.css – CSS for ‘jquery-hover-dropdown-box’.
 	jquery-hover-dropdown-box.less – Support file for ‘jquery-hover-dropdown-box.css’.
-![Layout 2](img/layout2.jpg)
+![Layout2](img/Layout2.jpg)
 This visualization is aimed at comparing different states in USA from 1966-2012 using multiple line chart. When the user hovers over the ‘Compare’ button, the list of states are displayed. Based on the choice of the user, different states can be selected where each state is associated with a unique color, which is reflected in the line chart as the color of the corresponding line. There is also an interactive tip tool to compare different states’ values displayed on the line chart.
 
