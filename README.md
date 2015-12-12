@@ -2,10 +2,8 @@
 
 Project Team:
 
-Amogh Raghunath
-
-Harsh Vardhan
-
+Amogh Raghunath<br>
+Harsh Vardhan<br>
 Arun Vadivel
 
 Links:
