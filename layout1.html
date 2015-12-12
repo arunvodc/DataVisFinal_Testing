@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<head>
+
+		<link type = "text/css" rel = "stylesheet" href = "css/layout1.css" />
+		<link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+</head>
+
+
+<body>	
+	
+	<div class = "crime" >
+			   <input type="image"  name = "category" onclick="a(this);" value="rape" id="a" checked src = "img/rape.jpg"/>
+			   <input type="image"  name = "category" onclick="a(this);" value="MNMR" id="b" src = "img/murder.jpg" />
+			   <input type="image"  name = "category" onclick="a(this);" value="robbery_rate" id="c" src = "img/robbery.jpg" />
+			   <input type="image"  name = "category" onclick="a(this);" value="assault_rate" id="d" src = "img/assault.jpg" /> 
+			   <input type="image"  name = "category" onclick="a(this);" value="property_crime_rate" id="e" src = "img/property.jpg" />
+			   <input type="image"  name = "category" onclick="a(this);" value="burglary_rate" id="f" src = "img/burglary.jpg" /> 
+			   <input type="image"  name = "category" onclick="a(this);" value="larceny_theft_rate" id="g" src = "img/larceny.jpg" />
+			   <input type="image"  name = "category" onclick="a(this);" value="motor_vehicle_theft_rate" id="h" src = "img/autotheft.jpg" />
+	</div>
+
+	
+	<svg width="960" height="600" id="statesvg"></svg> <!-- svg to hold the map. -->
+	
+	<img id = "comment" src = "img/rateText.jpg" />
+	
+	<div id="tableCat">
+		<table class = "crimeCat">
+			<thead>
+				<tr><th colspan = "2" id = "clickState" > Click  State! </th></tr>
+				<tr bgcolor="#0B486B" ><th>Crime </th> <th>State Rank</th> </tr>
+			</thead>
+			<tbody>
+			<tr bgcolor="#3B8686"><td> Rape</td><td></td></tr></p>
+			<tr bgcolor="#0B486B" ><td> Murder</td><td></td></tr>
+			<tr bgcolor="#3B8686" ><td> Robbery</td><td></td></tr>
+			<tr bgcolor="#0B486B" ><td> Assault</td><td></td></tr>
+			<tr bgcolor="#3B8686" ><td> Property Crime</td><td></td></tr>
+			<tr bgcolor="#0B486B" ><td> Burglary</td><td></td></tr>
+			<tr bgcolor="#3B8686" ><td> Larceny Theft</td><td></td></tr>
+			<tr bgcolor="#0B486B" ><td> Motor Vehicle Theft</td><td></td></tr>
+			</tbody>
+		</table>
+	</div>
+	
+
+
+	<div id="slider"></div>
+	<div id="legend"></div>
+	
+	<script src="js/main_crime.js"></script>
+	<script src="js/uStates.js"></script> <!-- creates uStates. -->
+	<script src="js/slider.js"></script>
+	<script src="http://d3js.org/d3.v3.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<div class = "links">
+	<a href = "layout2.html"> <img id = "icon" src = "img/next_icon.jpg" /></a>
+</div>
+	
+	
+	<script>
+
+		var last_state="NULL";
+		var flag=0;
+		var type='rape'; 
+		var def_year=1983;
+		
+		$('input').click(function(){
+			$('.selected').removeClass('selected');
+			$(this).addClass('selected');
+		});
+
+		function a(objButton){
+			type = objButton.value;
+			call(objButton.value,def_year)
+		}			
+			
+		slider()
+	
+	</script>
+
+</body>

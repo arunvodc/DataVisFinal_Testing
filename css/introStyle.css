@@ -1,0 +1,74 @@
+	body{
+
+	}
+	
+	
+	/*Heading of the intro page*/
+	
+	h2{
+		position: absolute;
+		top: 0px;
+		left: 750px;
+		font-family: 'Handlee', cursive;
+	}
+	
+	/* This is for the top 3(.top) images of flag(#flag), crime report(#crime_report) and fbi icon (#fbi)  */
+	
+	.top{
+		position: absolute;
+		left: 500px;
+		top: 80px;
+	}
+
+	#crime_report{
+		width: 400px;
+		height: 150px;
+		padding: 10px 50px 10px 50px;
+	}
+	
+	#flag{
+		width: 150px;
+		height: 150px;
+		padding: 10px 50px 10px 50px;
+	}
+	
+	#fbi{
+		width: 150px;
+		height: 150px;
+		padding: 0px 50px 0px 50px;
+	}
+	
+	
+	/* Intro text */
+	
+	.intro_text{
+		font-family: 'Dancing Script', cursive;
+		font-size: 26px;
+		position : absolute;
+		top: 250px;
+		left: 275px;
+		text-align: center;
+	}	
+	
+	
+	
+	/* 3 icons for links at the bottom of the screen */
+	
+	.links{
+		position: absolute;
+		top: 650px;
+		left: 750px;
+	}
+	
+	#icon {
+		width: 80px;
+		height: 80px;
+		padding: 0px 20px 0px 30px;
+	}
+	
+
+	.links > p{
+		font-size: 22px;
+	}
+	
+	

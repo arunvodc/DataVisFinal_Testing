@@ -1,0 +1,174 @@
+	
+	/* This is the body selector */
+	
+	body{
+		background-color: rgba(0, 0, 0, 0.81);
+	}
+
+	/* This is Comment - per 100,000  */	
+
+	.links{
+		position: absolute;
+		bottom: 80px;
+		left: 1600px;
+	}	
+	#icon {
+		width: 85px;
+		height: 85px;
+		padding: 0px 20px 0px 30px;
+	}
+	
+	#comment{
+		width: 200px;
+		height: 100px;
+		position: absolute;
+		top: 250px;
+	}
+	
+	/* This is the US States */
+	
+	.state{
+			fill: none;
+			stroke: white;
+			stroke-width: 2px;
+	}
+		
+	.state:hover{
+			opacity: 0.4;
+			color: red;
+	}
+	
+	#statesvg{
+			position: absolute;
+			left: 250px;
+			top: 200px;
+	}
+	
+	/* Legend Slector*/
+	
+	
+	.legend	{
+		font-size: 26px;
+		font-weight: bolder;
+		font-family: TimesNewRoman;
+	}
+	
+
+	/* This is the Crime Category Image selection */
+	
+	div.crime{
+
+	}
+	
+	div.crime > input{
+			width: 150px;
+			height:80px;
+			position: relative;
+			left: 70px;			
+	}
+	
+	.selected{
+	  border: 5px solid #CD0000;
+	}
+	
+	
+	
+	/* This is the table selector */
+	
+	#tableCat{
+		width: 500px;
+		height: 400px;
+		color: #FFC107;
+		font-size : 28px;
+		font-family: cursive;
+		position: absolute;
+		left : 1400px;
+		top: 200px;
+		
+	}
+		
+	#clickState{
+		color: white;
+		font-family: Cursive;
+		
+	}	
+	
+	tr th{
+		color: #EC560E;
+		font-size: 28px;
+		padding-right: 10px;
+		
+	}
+	
+	.crimeCat td{
+
+		padding-right : 20px;
+		padding-left: 20px;
+		text-align : center;
+	}
+	
+	.crimeCat tr{
+		background-color: "red";
+	}
+	
+	
+	table {
+			col-width : 200px;
+			col-height : 30px;
+			border-collapse: collapse;
+	}
+	
+	
+		
+	/* This is the Slider selector */	
+	
+	
+	#slider{
+		position: absolute;
+		left: 100px;
+		top: 800px;
+		fill:white;
+		font-size: 24px;
+	}
+	
+	
+	.axis {
+	  font: 16px sans-serif;
+	  -webkit-user-select: none;
+	  -moz-user-select: none;
+	  user-select: none;
+	  fill:white;
+	  font-size: 24px;
+	}
+
+	.axis .domain {
+	  fill: gray;
+	  stroke: #000;
+	  stroke-opacity: .3;
+	  stroke-width: 30px;
+	  stroke-linecap: round;
+	}
+
+	.axis .halo {
+	  fill: white;
+	  stroke: #ddd;
+	  stroke-width: 10px;
+	  stroke-linecap: round;
+	}
+
+	.slider .handle {
+	  fill: white;
+	  stroke: white;
+	  stroke-opacity: .8;
+	  font-size : 24px;
+	  stroke-width: 2px;
+	  cursor: crosshair;
+	}
+	
+	
+	
+
+
+
+
+

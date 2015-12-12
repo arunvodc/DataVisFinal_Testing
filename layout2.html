@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<head>
+		<link type = "text/css" rel = "stylesheet" href = "css/layout2.css" />
+		<link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+
+<div class="container">
+    <div class="header">
+        <div class="clr"></div>
+    </div>
+    <div class="sp-container">
+        <div class="sp-content">
+            <div class="sp-globe"></div>
+            	<h2 class="frame-1"><font face="sans-serif">Violent Crime Rates</font></h2>
+
+            	<h2 class="frame-2"><font face="sans-serif">in USA</font></h2>
+
+            	<h2 class="frame-3"><font face="sans-serif">from 1966 to 2012</font></h2>
+
+            	<h2 class="frame-5"><span><font face="sans-serif">Violent Crime Rates</font></span></h2>
+
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript" src="/path/to/shared/js/EventHelpers.js">
+</script>
+<script type="text/javascript" src="/path/to/shared/js/cssQuery-p.js">
+</script>
+<script type="text/javascript" src="/path/to/shared/js/jcoglan.com/sylvester.js">
+</script>
+<script type="text/javascript" src="/path/to/shared/js/cssSandpaper.js">
+</script>
+
+<div id = "line_graph"></div>
+
+<script src="http://d3js.org/d3.v3.min.js"></script>
+	<script src="js/line_js.js"></script>
+	<script src="js/draw_line.js"></script>
+	<!-- Include libraries -->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+	<script src="js/jquery-hover-dropdown-box.js"></script>
+	<link rel="stylesheet" href="css/jquery-hover-dropdown-box.css" />
+	<!---->
+
+	<style type="text/css">
+		body {color: #303030;
+			font-family: mplus-1p, "Helvetica Neue", Helvetica, Arial, sans-serif; }
+		a:link, a:visited { color: #71a7c2; }
+		hr {  margin: 40px 0px 40px 0px; bord	er: solid 1px #eeeeee; }
+		article { margin-left: 5%; margin-bottom: 100px; }
+		h3 { margin-top: 40px; }
+		section { margin-left: 2%; margin-bottom: 5%; }
+		pre { padding: 15px 10px 15px 10px; background-color: #dfdfdf; }
+		footer { font-size:small;position:fixed;right:5px;bottom:5px; }
+		.btn { padding: 10px 20px 10px 20px;
+			background-color: #00c10d; color: white; cursor: pointer;
+			border-bottom: 2px solid #00a30a; font-weight: bolder; }
+	</style>
+	<span id="example_follow_btn" class="btn">Compare States</span>
+		
+
+
+	<style> /* set the CSS */
+
+body { font: 12px Arial;}
+
+path { 
+    stroke: steelblue;
+    stroke-width: 2;
+    fill: none;
+}
+
+.axis path,
+.axis line {
+    fill: grey;
+    stroke: grey;
+    stroke-width: 7;
+    shape-rendering: crispEdges;
+}
+
+.grid .tick {
+    stroke: lightgrey;
+    opacity: 0.7;
+	stroke-dasharray: 2,2;
+}
+.grid path {
+      stroke-width: 0;
+}
+
+</style>
+<div class = "links">
+	<a href = "layout1.html"> <img id = "icon" src = "img/prev_icon.jpg" /></a>
+</div>
+	
+	
+		<!-- Example code (Hover) -->
+		<script type="text/javascript">
+		var flag1;
+		var color;
+		$(function(){
+			$('#example_follow_btn').appendHoverDropdownBox({
+				title: 'States',
+				items: {
+	"Rhode Island": {
+		color: "#e74c3c",
+		inputType: "checkbox",
+		inputChecked: false
+	},
+	"South Dakota": {
+		color: "#f1c40f", 
+		inputType: "checkbox",
+		inputChecked: false
+	},
+	"Vermont": {
+		color: "#2ecc71",
+		inputType: "checkbox",
+		inputChecked: false
+	},
+	"Iowa": {
+		color: "#3498db",
+		inputType: "checkbox",
+		inputChecked: false
+	},
+	"Nebraska": {
+		color: "#7f8c8d",
+		inputType: "checkbox",
+		inputChecked: false
+	},
+	"North Dakota": {
+		color: "#7FFF00",
+		inputType: "checkbox",
+		inputChecked: false
+	},
+	"New Hampshire": {
+		color: "#FAEBD7",
+		inputType: "checkbox",
+		inputChecked: false
+	},
+	
+	"Wisconsin": {
+		color: "#00FFFF",
+		inputType: "checkbox",
+		inputChecked: false
+	},
+	
+	"Connecticut": {
+		color: "#7FFFD4",
+		inputType: "checkbox",
+		inputChecked: false
+	},
+	
+	"Utah": {
+		color: "#D2691E",
+		inputType: "checkbox",
+		inputChecked: false
+	},
+	
+	
+	
+	"Maine": {
+		color: "#00FFFF",
+		inputType: "checkbox",
+		inputChecked: false
+	},
+	"Minnesota": {
+		color: "#FBB917", 
+		inputType: "checkbox",
+		inputChecked: false
+	},
+	"Massachusetts": {
+		color: "#FFEBCD",
+		inputType: "checkbox",
+		inputChecked: false
+	},
+	"Washington": {
+		color: "#806517",
+		inputType: "checkbox",
+		inputChecked: false
+	},
+	"Oregon": {
+		color: "#FF2400",
+		inputType: "checkbox",
+		inputChecked: false
+	},
+	"Montana": {
+		color: "#FCDFFF",
+		inputType: "checkbox",
+		inputChecked: false
+	},
+	"Hawaii": {
+		color: "#C6AEC7",
+		inputType: "checkbox",
+		inputChecked: false
+	},
+	
+	"Idaho": {
+		color: "#ffff00",
+		inputType: "checkbox",
+		inputChecked: false
+	},
+	
+	"Pennsylvania": {
+		color: "#008080",
+		inputType: "checkbox",
+		inputChecked: false
+	},
+	
+	"Kansas": {
+		color: "#B22222",
+		inputType: "checkbox",
+		inputChecked: false
+	},
+	
+	
+		"New Jersey": {
+		color: "#808000",
+		inputType: "checkbox",
+		inputChecked: false
+	},
+	"Colorado": {
+		color: "#BA55D3", 
+		inputType: "checkbox",
+		inputChecked: false
+	},
+	"Indiana": {
+		color: "#FFEBCD",
+		inputType: "checkbox",
+		inputChecked: false
+	},
+	"West Virginia": {
+		color: "#A52A2A",
+		inputType: "checkbox",
+		inputChecked: false
+	},
+	"Ohio": {
+		color: "#FF6347",
+		inputType: "checkbox",
+		inputChecked: false
+	},
+	"California": {
+		color: "#191970",
+		inputType: "checkbox",
+		inputChecked: false
+	},
+	"New York": {
+		color: "#D2B48C",
+		inputType: "checkbox",
+		inputChecked: false
+	},
+	
+	"Wyoming": {
+		color: "#CD853F",
+		inputType: "checkbox",
+		inputChecked: false
+	},
+	
+	"Michigan": {
+		color: "#DAA520",
+		inputType: "checkbox",
+		inputChecked: false
+	},
+	
+	"Missouri": {
+		color: "#006400",
+		inputType: "checkbox",
+		inputChecked: false
+	},
+	
+	
+		"Oklahoma": {
+		color: "#6A5ACD",
+		inputType: "checkbox",
+		inputChecked: false
+	},
+	"Arizona": {
+		color: "#2F4F4F", 
+		inputType: "checkbox",
+		inputChecked: false
+	},
+	"New Mexico": {
+		color: "#B0E0E6",
+		inputType: "checkbox",
+		inputChecked: false
+	},
+	"Illinois": {
+		color: "#Kentucky",
+		inputType: "checkbox",
+		inputChecked: false
+	},
+	"Maryland": {
+		color: "#8FBC8F",
+		inputType: "checkbox",
+		inputChecked: false
+	},
+	"Arkansas": {
+		color: "#00FFFF",
+		inputType: "checkbox",
+		inputChecked: false
+	},
+	"Tennessee": {
+		color: "#1E90FF",
+		inputType: "checkbox",
+		inputChecked: false
+	},
+	
+	"Virginia": {
+		color: "#FFF5EE",
+		inputType: "checkbox",
+		inputChecked: false
+	},
+	
+	"Delaware": {
+		color: "#FFFAFA",
+		inputType: "checkbox",
+		inputChecked: false
+	},
+	
+	"Texas": {
+		color: "#BC8F8F",
+		inputType: "checkbox",
+		inputChecked: false
+	},
+	
+	
+		"North Carolina": {
+		color: "#FFF8DC",
+		inputType: "checkbox",
+		inputChecked: false
+	},
+	"Mississippi": {
+		color: "#800000", 
+		inputType: "checkbox",
+		inputChecked: false
+	},
+	"Louisiana": {
+		color: "#696969",
+		inputType: "checkbox",
+		inputChecked: false
+	},
+	"Florida": {
+		color: "#A0522D",
+		inputType: "checkbox",
+		inputChecked: false
+	},
+	"Nevada": {
+		color: "#7CFC00",
+		inputType: "checkbox",
+		inputChecked: false
+	},
+	"Alabama": {
+		color: "#5F9EA0",
+		inputType: "checkbox",
+		inputChecked: false
+	},
+	"Georgia": {
+		color: "#DC143C",
+		inputType: "checkbox",
+		inputChecked: false
+	},
+	
+	"South Carolina": {
+		color: "#FFD700",
+		inputType: "checkbox",
+		inputChecked: false
+	},
+	
+	"Alaska": {
+		color: "#F0E68C",
+		inputType: "checkbox",
+		inputChecked: false
+	},
+	
+	"Nevada": {
+		color: "#87CEFA",
+		inputType: "checkbox",
+		inputChecked: false
+	},
+	
+	"Columbia": {
+		color: "Red",
+		inputType: "checkbox",
+		inputChecked: false
+	},
+
+},
+				onChange: function(key, item, value){
+				draw_line(key, value, item);
+				},
+				
+				onLabelClick: function(key, item){
+					item.checked( !item.checked() );
+				}
+			});
+		});
+
+</script>
+</body>
