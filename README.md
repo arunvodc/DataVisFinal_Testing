@@ -20,16 +20,16 @@ The introduction page contains a short description about what this visualization
 The data is present in ‘crime.csv’ file and it contains all the required data for the visualization.
 
 #Layout 1:
-	This visualization has an interactive map with to visualize the trends of different states from 1966-2012 with the help of a year slider and a rank table for different categories of crime.
-	Layout1.html – HTML file for the visualization of Layout 1 with a call to main_crime.js and the link to D3.js library.
-	In ‘js’ folder:
-	main_crime.js – This file has the initial call from where the major interactions of the visualizations take place. It also controls the call to the category rank table and the interactive map.
-	slider.js – Contains the code for slider function for the years form 1966-2012. This triggers a function call to change the rank table and the color of the interactive map by calling uStates.js
-	uStates.js – Contains the us.json content for the path of the map. Part of the code where rank table is calculated.
-	In ‘css’ folder:
-	Layout1.css – Contains the CSS styling functions for the Layout.html file.
-	In ‘img’ folder:
-	Contains the images for different categories presented in layout1.html
+This visualization has an interactive map with to visualize the trends of different states from 1966-2012 with the help of a year slider and a rank table for different categories of crime.
+Layout1.html – HTML file for the visualization of Layout 1 with a call to main_crime.js and the link to D3.js library.
+In ‘js’ folder:
+main_crime.js – This file has the initial call from where the major interactions of the visualizations take place. It also controls the call to the category rank table and the interactive map.
+slider.js – Contains the code for slider function for the years form 1966-2012. This triggers a function call to change the rank table and the color of the interactive map by calling uStates.js
+uStates.js – Contains the us.json content for the path of the map. Part of the code where rank table is calculated.
+In ‘css’ folder:
+Layout1.css – Contains the CSS styling functions for the Layout.html file.
+In ‘img’ folder:
+Contains the images for different categories presented in layout1.html
 <picture>
 
 The user can view the crime trends of all the states from 1966-2012 using the interactive map and the slider for changing the years. This can be changed for different categories. Also there is a rank table for the user to display the rank of each state (based on a click on the map) for different categories, which changes dynamically.
