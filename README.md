@@ -6,7 +6,7 @@ Amogh Raghunath<br>
 Harsh Vardhan<br>
 Arun Vadivel
 
-Links:
+Links:<br>
 [Introduction](http://arunvodc.github.io/DataVisFinal/introduction.html)<br>
 [Layout1](http://arunvodc.github.io/DataVisFinal/layout1.html)<br>
 [Layout2](http://arunvodc.github.io/DataVisFinal/layout2.html)
