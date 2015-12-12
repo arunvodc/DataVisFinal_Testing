@@ -35,7 +35,7 @@ Contains the images for different categories presented in layout1.html
 The user can view the crime trends of all the states from 1966-2012 using the interactive map and the slider for changing the years. This can be changed for different categories. Also there is a rank table for the user to display the rank of each state (based on a click on the map) for different categories, which changes dynamically.
 
 #Layout 2:
-	Layout 2 is the visualization to compare different states in USA on basis of Violent Crime Rates for the years 1966-2012 using multiple line chart.
+Layout 2 is the visualization to compare different states in USA on basis of Violent Crime Rates for the years 1966-2012 using multiple line chart.
 	Layout2.html – HTML file for the visualization to compare violent crime rates for different states from 1966-2012. Calls jQuery for ‘jquery-hover-dropdown-box’ for interactive checkbox.
 	In ‘js’ folder:
 	Line.js –JavaScript file for data processing and initializing the layout appearance.
