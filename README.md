@@ -1,8 +1,11 @@
 # DataVisFinal
 
 Project Team:
+
 Amogh Raghunath
+
 Harsh Vardhan
+
 Arun Vadivel
 
 Links:
