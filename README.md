@@ -10,9 +10,9 @@ Links:
 <Visualization>
 <Screencast>
 
-[Here](https://arunvodc.github.io/DataVisFinal_Testing/introduction.html)
-[Youtube](https://www.youtube.com/)
-
+[Introduction](https://arunvodc.github.io/DataVisFinal_Testing/introduction.html)
+[Layout1](https://arunvodc.github.io/DataVisFinal_Testing/layout1.html)
+layout1.html
 Overview:
 <Browse through internet> This is a visualization for Crime Rates in USA from 1966-2012.  The visualization has two layouts.  The first layout shows the user about the trends of different states in USA for each category of crimes with an interactive map and the ranks of the states for each of those category from the years 1966-2012.<br /> The second layout is for comparing different states based on the total violent crime on a multiple line chart for the years 1965-2012. There is a navigation link between the two layout and an introduction page for the convenience of the user to shift between visualizations.
 
