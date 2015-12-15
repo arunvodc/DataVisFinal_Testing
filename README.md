@@ -1,7 +1,7 @@
-#Project Team:
-Amogh Raghunath (GitHub ID: amogh147)<br>
-Harsh Vardhan (GitHub ID: Vardhan17)<br>
-Arun Vadivel (GitHub ID: arunvodc)
+#Project Team (Name and GitHub ID):
+Amogh Raghunath (amogh147)<br>
+Harsh Vardhan (Vardhan17)<br>
+Arun Vadivel (arunvodc)
 
 #Links:
 [Introduction](http://arunvodc.github.io/DataVisFinal_Testing/introduction.html)<br>
