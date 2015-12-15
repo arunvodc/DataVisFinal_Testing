@@ -46,3 +46,10 @@ Arun Vadivel (arunvodc)
 <br>jquery-hover-dropdown-box.less – Support file for ‘jquery-hover-dropdown-box.css’.
 <br><br>![Layout2](img/Layout2.jpg)<br>
 <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This visualization is aimed at comparing different states in USA from 1966-2012 using multiple line chart. When the user hovers over the ‘Compare’ button, the list of states are displayed. Based on the choice of the user, different states can be selected where each state is associated with a unique color, which is reflected in the line chart as the color of the corresponding line. There is also an interactive tip tool to compare different states’ values displayed on the line chart.
+
+#References:
+[Crime Data Link](http://www.ucrdatatool.gov/Search/Crime/State/StatebyState.cfm?NoVariables=Y&CFID=120725516&CFTOKEN=bd96e08ed9febd35-29F3C038-DA0F-AE2A-333418C82FDB6803)<br>
+[Area + Line Chart](http://bl.ocks.org/mbostock/9490516)<br>
+[US Map](http://bl.ocks.org/NPashaP/a74faf20b492ad377312)<br>
+[Caution against ranking](http://www.ucrdatatool.gov/ranking.cfm)<br>
+[Multi line chart](http://bl.ocks.org/mbostock/3884955http://bl.ocks.org/mbostock/3884955)
